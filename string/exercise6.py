@@ -6,12 +6,11 @@ def StrMixer(str1,str2):
         answer+=i
         if len(str2)> -str2_index:
             answer+=str2[str2_index]
+            str2_index+=-1
     if len(str2)>len(str1):
         final_ader=len(str2)-len(str1)
-        answer+=str2[final_ader:]
+        answer+=str2[:final_ader]
     return answer
 
 
-print(StrMixer("Pynative", "Website"))
-
-
+print(StrMixer("Pynative", "Website121212"))
